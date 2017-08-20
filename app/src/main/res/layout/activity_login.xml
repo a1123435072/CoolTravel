@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#c9c9c9"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/login"
+            android:layout_gravity="center_horizontal" />
+        <EditText
+            android:id="@+id/name"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#e5e4e5e7"
+            android:hint="昵称" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#e5e4e5e7"
+            android:layout_marginTop="10dp"
+            android:hint="密码"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/cpassword"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#e5e4e5e7"
+            android:layout_marginTop="10dp"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="#e5e4e5e7"
+            android:layout_marginTop="10dp"
+            android:hint="邮箱" />
+
+        <!--提交按钮-->
+        <Button
+            android:onClick="login"
+            android:layout_marginTop="10dp"
+            android:id="@+id/submit"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/zhuce"
+            android:layout_gravity="center_horizontal"
+            android:text=""
+            android:textColor="#f9ffffff"
+            />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#c9c9c9">
+
+    <!-- 头部 -->
+    <TextView
+        android:id="@+id/mychat"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center"
+        android:layout_alignParentTop="true"
+        android:background="#42c9f8"
+        android:text="聊天"
+        android:textColor="#5A0000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="10dp"
+        android:background="#c9c9c9"
+        android:orientation="horizontal" >
+
+        <EditText
+            android:id="@+id/et_send_msg"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:background="#fff"
+            android:layout_weight="3" />
+        <LinearLayout
+            android:id="@+id/ll_ll_bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_style_normal"
+            android:orientation="horizontal" >
+            <Button
+                android:id="@+id/btn_send_msg"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:text="发送" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ListView
+        android:background="#c9c9c9"
+        android:id="@+id/chat_msg_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/ll_bottom"
+        android:layout_below="@id/mychat"
+        android:divider="@null"
+        android:dividerHeight="5dp" >
+    </ListView>
+
+</RelativeLayout>

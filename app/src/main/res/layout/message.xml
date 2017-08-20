@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#c9c9c9"
+    >
+
+    <!--&lt;!&ndash; 头部 &ndash;&gt;-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:gravity="center"-->
+        <!--android:background="#42c9f8"-->
+        <!--android:text="消息"-->
+        <!--android:textColor="#5A0000"-->
+        <!--android:textSize="20dp"-->
+        <!--android:textStyle="bold" />-->
+
+    <RelativeLayout
+        android:id="@+id/rl_partner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp">
+        <!-- 头像 -->
+        <ImageView
+            android:id="@+id/resume_picture1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/guanjia"
+            />
+        <!-- 用户名 -->
+        <TextView
+            android:id="@+id/jianli_name1"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/resume_picture1"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="酷行天下小管家"
+            android:textColor="#EA9A27"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C8D6D9"></View>
+    <RelativeLayout
+        android:id="@+id/rl_partner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp">
+        <!-- 头像 -->
+        <ImageView
+            android:id="@+id/resume_picture2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/mishu"
+            />
+        <!-- 用户名 -->
+        <TextView
+            android:id="@+id/jianli_name2"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@+id/resume_picture2"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="10dp"
+            android:text="官方小秘书"
+            android:textColor="#EA9A27"
+            android:textSize="18dp" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#C8D6D9"></View>
+</LinearLayout>
